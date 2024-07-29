@@ -1,0 +1,35 @@
+.other-products__title {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.other-products__name {
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.other-products__wrapper {
+  font-family: $Lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #444444;
+}
+
+.other-products__button {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: $Oswald;
+  background-color: #68b738;
+}

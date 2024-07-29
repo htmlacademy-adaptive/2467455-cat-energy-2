@@ -1,0 +1,54 @@
+.example-slider {
+  background-color: #eaeaea;
+}
+
+.example-slider__title {
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.example-slider_description {
+  font-family: $Lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.example-slider__information-kg p:nth-child(1) {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.example-slider__information-kg p:nth-child(2) {
+  font-family: $Lato;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+  text-align: center;
+}
+
+.example-slider__information-days p:nth-child(1) {
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.example-slider__information-days p:nth-child(2) {
+  font-family: $Lato;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #444444;
+  text-align: center;
+}
+
+.cost {
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}

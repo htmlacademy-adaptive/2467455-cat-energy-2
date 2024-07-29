@@ -1,28 +1,28 @@
-.product__item-title {
+.more__info {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   text-transform: uppercase;
-  color: #222222;
+  color: #111111;
 }
 
-.product__wrapper-list {
+.more__description {
   font-family: $Lato;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-  text-transform: uppercase;
   color: #444444;
 }
 
-.product__button {
+.more__button {
   font-family: $Oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
-  background-color: #68b738;
+  color: #444444;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
 }
