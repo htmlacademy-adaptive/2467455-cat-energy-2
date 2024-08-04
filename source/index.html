@@ -5,27 +5,27 @@
   <meta charset="UTF-8">
   <title>Cat energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="/build/styles/styles.css">
+  <link rel="stylesheet" href="./styles/styles.css">
   <script src="scripts/index.js" defer></script>
-  <link rel="apple-touch-icon" sizes="180x180" href="/source/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/source/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/source/favicons/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
   <link rel="manifest" href="/source/manifest.webmanifest.webmanifest">
-  <link rel="mask-icon" href="/source/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 </head>
 
-<body class="page__body">
+<body class="page">
   <header class="main-header">
     <nav class="navigation">
-      <a class="navigation__logo-image logo" href="#">
-        <span class="visually-hidden">Логотип Cat energy</span>
-        <img class="logo__image" src="#" width="1" height="1" alt="">
-      </a>
-      <a class="navigation__logo-word logo" href="#">
-        <span class="visually-hidden">Логотип Cat energy</span>
-        <img class="logo__image" src="#" width="1" height="1" alt="">
+      <a class="navigation__logo-image logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="images/logodesktop.svg" width="70" height="59" type="image/svg+xml">
+          <source media="(min-width: 768px)" srcset="images/logotablet.svg" width="60" height="50" type="image/svg+xml">
+          <img class="logo__image" src="images/logomobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+        </picture>
+        <img class="logo__text" src="images/logotext.svg" width="101" height="18" alt="Товарный знак Cat energy.">
       </a>
       <ul class="navigation__list">
         <li class="navigation__item">
@@ -38,7 +38,7 @@
           <a class="navigation__link" href="#">Подбор программы</a>
         </li>
       </ul>
-      <button class="navigation__menu" type="button" aria-label="Выпадающий список меню">--</button>
+      <button class="navigation__menu navigation__menu-close" type="button" aria-label="Выпадающий список меню">...</button>
     </nav>
   </header>
   <main class="main-index">
@@ -99,7 +99,7 @@
           <p>60 ДНЕЙ</p>
           <p>затрачено времени</p>
         </div>
-        <p class="cost">Затраты на питание: 15 000 РУБ.</p>
+        <p class="example-slider__cost">Затраты на питание: 15 000 РУБ.</p>
       </div>
       <div class="example-slider__wrapper">
         <picture>
@@ -119,8 +119,8 @@
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
-      <a class="main-footer__logo" href="#"><span class="visually-hidden">Логотип Cat energy</span>
-        <img src="#" width="1" height="1" alt="">
+      <a class="main-footer__logo" href="index.html">
+        <img src="images/logotext.svg" width="128" height="24" alt="Товарный знак Cat energy.">
       </a>
       <div class="main-footer__social social">
         <ul class="social__list">

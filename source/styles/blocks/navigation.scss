@@ -7,3 +7,19 @@
   color: #000000;
   text-decoration: none;
 }
+
+.navigation__menu-close {
+  background-image: url("../icons/stack.svg#closebutton");
+  cursor: pointer;
+}
+
+.navigation__menu {
+  background-image: url("../icons/stack.svg#menubutton");
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  width: 24px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+}
