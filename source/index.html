@@ -38,7 +38,7 @@
           <a class="navigation__link" href="#">Подбор программы</a>
         </li>
       </ul>
-      <button class="navigation__menu navigation__menu-close" type="button" aria-label="Выпадающий список меню">...</button>
+      <button class="navigation__menu navigation__menu--close" type="button" aria-label="Выпадающий список меню"></button>
     </nav>
   </header>
   <main class="main-index">
@@ -115,40 +115,44 @@
     <section class="map">
       <h2 class="map__title">Приглашаем к сотрудничеству дилеров!</h2>
       <address class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="images/mapdesktop.svg" width="1440" height="400" type="image/svg+xml">
+        <source media="(min-width: 768px)" srcset="images/maptablet.svg" width="768" height="400" type="image/svg+xml">
+        <img class="map__image" src="images/mapmobile.svg" width="320" height="362" alt="Расположение не карте магазина Cat Energy">
+      </picture>
     </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <a class="main-footer__logo" href="index.html">
-        <img src="images/logotext.svg" width="128" height="24" alt="Товарный знак Cat energy.">
+        <span class="visually-hidden">Товарный знак Cat energy</span>
       </a>
       <div class="main-footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vkontakte" href="#">
               <span class="visually-hidden">Вконтакте</span>
-              <img src="#" width="1" height="1" alt="">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--youtube" href="#">
               <span class="visually-hidden">Youtube</span>
-              <img src="#" width="1" height="1" alt="">
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link--telegram" href="#">
               <span class="visually-hidden">Telegram</span>
-              <img src="#" width="1" height="1" alt="">
             </a>
           </li>
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <a class="copyright__logo" href="#">
-          <span class="visually-hidden">Лого Html Academy</span>
+        <a class="copyright__logo" href="https://htmlacademy.ru">
+          <span class="visually-hidden">Товарный знак Html Academy</span>
           <p>HTML Academy</p>
-          <img src="#" width="1" height="1" alt="">
+        </a>
+        <a class="copyright__logo-html" href="https://htmlacademy.ru">
+          <span class="visually-hidden">Лого Html Academy</span>
         </a>
       </div>
     </div>
