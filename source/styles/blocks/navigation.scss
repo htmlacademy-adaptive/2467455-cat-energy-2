@@ -1,16 +1,129 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  height: 264px;
+  max-width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 704px;
+    max-width: 1199px;
+    height: 50px;
+    margin: 25px 1px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 1200px;
+    max-width: 100%;
+  }
+}
+
+.navigation__logo-image {
+  width: 190px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__container {
+  width: 280px;
+  height: 38px;
+  margin: 13px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    margin: 0;
+  }
+}
+
 .navigation__list {
   font-size: 20px;
   line-height: 20px;
+  text-transform: uppercase;
+  font-family: $Oswald;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    min-width: 436px;
+    flex-wrap: wrap;
+    margin-top: 23px;
+  }
+}
+
+.navigation__item {
+  height: 66px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    min-width: 64px;
+    margin-right: 33px;
+  }
+}
+
+
+.navigation__item:not(:last-child) {
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+}
+
+.navigation__item:first-child {
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+  }
 }
 
 .navigation__link {
   color: #000000;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: red;
+  }
+}
+
+.navigation__link--current {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid #68b738;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid red;
+  }
 }
 
 .navigation__menu--close {
   background-image: url("../../icons/stack.svg#closebutton");
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
   cursor: pointer;
+  width: 18px;
+  height: 18px;
+  border: none;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .navigation__menu {
@@ -22,4 +135,9 @@
   height: 24px;
   border: none;
   cursor: pointer;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

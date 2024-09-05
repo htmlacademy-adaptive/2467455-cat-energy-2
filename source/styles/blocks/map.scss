@@ -1,9 +1,38 @@
+.map {
+  width: 320px;
+  margin: 0 auto;
+  height: 474px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+    min-height: 598px;
+  }
+}
+
+.map-container {
+  display: flex;
+  padding: 26px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 70px;
+    justify-content: space-between;
+  }
+}
+
 .map__title {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 163px;
+  }
 }
 
 .map__address {
@@ -12,4 +41,12 @@
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    width: 157px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+  }
 }

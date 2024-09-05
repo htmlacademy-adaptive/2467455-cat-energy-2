@@ -1,9 +1,40 @@
+.hero {
+  background-color: #68b738;
+  width: 320px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    min-height: 850px;
+  }
+}
+
 .hero__title {
   font-size: 36px;
   line-height: 36px;
   text-align: center;
   font-weight: 400;
   color: #ffffff;
+  min-width: 249px;
+  height: 72px;
+  margin-top: 27px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    margin-top: 65px;
+    margin-bottom: 40px;
+    font-size: 60px;
+    line-height: 60px;
+    width: 420px;
+    text-align: start;
+    margin-left: 120px;
+  }
 }
 
 .hero__description {
@@ -11,6 +42,19 @@
   line-height: 14px;
   text-transform: uppercase;
   color: #ffffff;
+  width: 198px;
+  margin: auto;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    margin-top: 40px;
+    margin-left: 120px;
+    margin-bottom: 21px;
+    width: 283px;
+  }
 }
 
 .hero__button {
@@ -22,4 +66,27 @@
   color: #ffffff;
   text-transform: uppercase;
   background-color: #68b738;
+  display: block;
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -580px;
+    margin-left: 120px;
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.hero__image {
+  display: block;
+  margin: 0 auto;
 }

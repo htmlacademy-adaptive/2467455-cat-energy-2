@@ -19,14 +19,17 @@
 <body class="page">
   <header class="main-header">
     <nav class="navigation">
-      <a class="navigation__logo-image logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="images/logodesktop.svg" width="70" height="59" type="image/svg+xml">
-          <source media="(min-width: 768px)" srcset="images/logotablet.svg" width="60" height="50" type="image/svg+xml">
-          <img class="logo__image" src="images/logomobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-        </picture>
-        <img class="logo__text" src="images/logotext.svg" width="101" height="18" alt="Товарный знак Cat energy.">
-      </a>
+      <div class="navigation__container">
+        <a class="navigation__logo-image logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="images/logodesktop.svg" width="70" height="59" type="image/svg+xml">
+            <source media="(min-width: 768px)" srcset="images/logotablet.svg" width="60" height="50" type="image/svg+xml">
+            <img class="logo__image" src="images/logomobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+          </picture>
+          <img class="logo__text" src="images/logotext.svg" width="101" height="18" alt="Товарный знак Cat energy.">
+        </a>
+        <button class="navigation__menu navigation__menu--close" type="button" aria-label="Выпадающий список меню"></button>
+      </div>
       <ul class="navigation__list">
         <li class="navigation__item">
           <a class="navigation__link navigation__link--current" href="index.html">Главная</a>
@@ -38,7 +41,6 @@
           <a class="navigation__link" href="#">Подбор программы</a>
         </li>
       </ul>
-      <button class="navigation__menu navigation__menu--close" type="button" aria-label="Выпадающий список меню"></button>
     </nav>
   </header>
   <main class="main-index">
@@ -90,14 +92,16 @@
     <section class="example-slider">
       <h2 class="example-slider__title">Живой пример</h2>
       <p class="example-slider_description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-      <div class="example-slider__information">
-        <div class="example-slider__information-kg">
-          <p>5 КГ</p>
-          <p>снижение веса</p>
-        </div>
-        <div class="example-slider__information-days">
-          <p>60 ДНЕЙ</p>
-          <p>затрачено времени</p>
+      <div class="example-slider__container">
+        <div class="example-slider__information">
+          <div class="example-slider__information-kg">
+            <p>5 КГ</p>
+            <p>снижение веса</p>
+          </div>
+          <div class="example-slider__information-days">
+            <p>60 ДНЕЙ</p>
+            <p>затрачено времени</p>
+          </div>
         </div>
         <p class="example-slider__cost">Затраты на питание: 15 000 РУБ.</p>
       </div>
@@ -120,8 +124,10 @@
       </div>
     </section>
     <section class="map">
-      <h2 class="map__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <address class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <div class="map-container">
+        <h2 class="map__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <address class="map__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      </div>
       <picture>
         <source media="(min-width: 1200px)" srcset="images/mapdesktop.svg" width="1440" height="400" type="image/svg+xml">
         <source media="(min-width: 768px)" srcset="images/maptablet.svg" width="768" height="400" type="image/svg+xml">
