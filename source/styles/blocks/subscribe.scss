@@ -1,8 +1,27 @@
+.subscribe {
+  width: 280px;
+  height: 256px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 108px;
+    height: 2px;
+    background-image: url("../../icons/subscribeline.svg");
+    top: 15%;
+    right: 0;
+  }
+}
+
 .subscribe__title {
   font-size: 24px;
   line-height: 24px;
-  text-align: center;
+  text-align: start;
   font-weight: 400;
+  margin-bottom: 32px;
 }
 
 .subscribe__description {
@@ -10,6 +29,7 @@
   line-height: 24px;
   text-align: center;
   font-weight: 400;
+  margin-bottom: 24px;
 }
 
 .subscribe__form input {
@@ -30,4 +50,16 @@
   color: #ffffff;
   text-transform: uppercase;
   background-color: #68b738;
+  width: 280px;
+  height: 56px;
+  border: none;
+}
+
+.subscribe__form input {
+  width: 267px;
+  height: 56px;
+  border: 1px solid #cdcdcd;
+  background-color: #ffffff;
+  padding-left: 13px;
+  margin-bottom: 16px;
 }

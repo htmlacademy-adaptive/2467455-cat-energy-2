@@ -9,6 +9,14 @@
     margin: 0 auto;
     border-bottom: 1px solid #e6e6e6;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    margin: 0 auto;
+    min-height: 372px;
+    padding-bottom: 69px;
+    border-bottom: 0;
+  }
 }
 
 .advantages__title {
@@ -28,6 +36,12 @@
     margin-bottom: 32px;
     margin-top: 45px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+    margin-top: 0;
+    margin-bottom: 72px;
+  }
 }
 
 .advantages__description {
@@ -41,10 +55,15 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 204px;
+    margin-top: 45px;
+  }
 }
 
 .advantages__list {
-  height: 300px;
+  min-height: 300px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -52,6 +71,17 @@
     grid-template-rows: 280px 280px;
     gap: 37px 136px;
     align-items: flex-end;
+    counter-reset: example 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    width: 1220px;
+    margin: 0 auto;
+    gap: 0;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 280px;
   }
 }
 
@@ -66,11 +96,20 @@
     margin-left: 30px;
     padding-bottom: 57px;
   }
+
+  @media (min-width: $desktop-width) {
+    min-width: 230px;
+    padding-bottom: 0;
+    margin-left: 0;
+  }
 }
 
 .advantages__item:nth-child(1) {
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    counter-increment: example 1;
+  }
 }
 
 .advantages__item:nth-child(1)::before {
@@ -87,6 +126,10 @@
     height: 80px;
     top: -110px;
     left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -75px;
   }
 }
 
@@ -109,6 +152,10 @@
     top: -110px;
     left: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    top: -75px;
+  }
 }
 
 .advantages__item:nth-child(3) {
@@ -130,6 +177,10 @@
     top: -110px;
     left: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    top: -75px;
+  }
 }
 
 .advantages__item:nth-child(4) {
@@ -150,5 +201,9 @@
     height: 80px;
     top: -110px;
     left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -75px;
   }
 }

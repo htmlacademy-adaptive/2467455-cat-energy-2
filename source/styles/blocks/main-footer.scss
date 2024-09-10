@@ -8,6 +8,10 @@
     width: 768px;
     padding-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
 }
 
 .main-footer__wrapper {
@@ -21,6 +25,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 55px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: auto;
   }
 }
 

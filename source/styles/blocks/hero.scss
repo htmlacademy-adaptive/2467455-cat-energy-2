@@ -1,16 +1,44 @@
 .hero {
-  background-color: #68b738;
   width: 320px;
   height: 500px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url("../../icons/stack.svg#backcatmobile");
+    width: 320px;
+    height: 302px;
+    z-index: -1;
+  }
 
   @media (min-width: $tablet-width) {
     width: 768px;
     margin: 0 auto;
     background-color: #ffffff;
     min-height: 850px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+    min-height: 600px;
+    margin-bottom: 82px;
+
+    // &::after {
+    //   position: absolute;
+    //   content: "";
+    //   background-image: url("../../icons/backcatdesktop.svg");
+    //   background-repeat: no-repeat;
+    //   width: 720px;
+    //   height: 694px;
+    //   right: 0;
+    //   top: 0;
+    // }
   }
 }
 
@@ -35,6 +63,12 @@
     text-align: start;
     margin-left: 120px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 110px;
+    margin-left: 190px;
+    margin-bottom: 40px;
+  }
 }
 
 .hero__description {
@@ -54,6 +88,11 @@
     margin-left: 120px;
     margin-bottom: 21px;
     width: 283px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+    margin-left: 190px;
   }
 }
 
@@ -75,6 +114,15 @@
   @media (min-width: $tablet-width) {
     margin-top: -580px;
     margin-left: 120px;
+    font-size: 20px;
+    line-height: 24px;
+    width: 244px;
+    height: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -200px;
+    margin-left: 190px;
   }
 
   &:hover {
@@ -89,4 +137,9 @@
 .hero__image {
   display: block;
   margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin-top: -300px;
+    margin-right: 280px;
+  }
 }

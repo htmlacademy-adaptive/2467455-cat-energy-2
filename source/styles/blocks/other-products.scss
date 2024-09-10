@@ -1,17 +1,53 @@
+.other-products {
+  width: 320px;
+  margin: 0 auto;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 34px;
+    height: 2px;
+    background-image: url("../../icons/linemore.svg");
+    top: 10px;
+    right: 0;
+  }
+}
+
 .other-products__title {
   font-size: 24px;
   line-height: 24px;
   text-align: center;
   font-weight: 400;
+  width: 226px;
+  margin-left: 20px;
+  margin-bottom: 36px;
+}
+
+.other-products__list {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.other-products_item {
+  height: 98px;
+  border-top: 1px solid #cdcdcd;
+  padding-top: 13px;
+  padding-bottom: 19px;
+}
+
+.other-products_item:last-child {
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .other-products__name {
   font-size: 16px;
   line-height: 16px;
-  text-align: center;
   font-weight: 400;
   color: #222222;
   text-transform: uppercase;
+  margin-bottom: 13px;
+  display: block;
 }
 
 .other-products__wrapper {
@@ -21,6 +57,9 @@
   line-height: 14px;
   text-align: center;
   color: #444444;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .other-products__button {
@@ -32,4 +71,7 @@
   text-transform: uppercase;
   font-family: $Oswald;
   background-color: #68b738;
+  width: 280px;
+  height: 40px;
+  border: none;
 }
