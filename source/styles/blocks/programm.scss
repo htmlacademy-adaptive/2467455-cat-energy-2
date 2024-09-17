@@ -1,17 +1,12 @@
 .programm {
   min-height: 540px;
-  width: 320px;
   margin: 20px auto;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
-    margin: 0 auto;
     min-height: 783px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
-    margin: 0 auto;
     min-height: 374px;
     margin-bottom: 71px;
   }

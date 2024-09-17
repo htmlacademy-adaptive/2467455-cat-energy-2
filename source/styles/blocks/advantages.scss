@@ -1,18 +1,12 @@
 .advantages {
-  width: 320px;
-  margin: 0 auto;
   margin-bottom: 49px;
 
   @media (min-width: $tablet-width) {
     min-height: 700px;
-    width: 768px;
-    margin: 0 auto;
     border-bottom: 1px solid #e6e6e6;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
-    margin: 0 auto;
     min-height: 372px;
     padding-bottom: 69px;
     border-bottom: 0;
@@ -25,7 +19,6 @@
   font-weight: 400;
   text-align: start;
   width: 280px;
-  margin-left: 20px;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
@@ -38,9 +31,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 110px;
+    margin-left: 0;
     margin-top: 0;
-    margin-bottom: 72px;
+    margin-bottom: 32px;
   }
 }
 
@@ -58,7 +51,8 @@
 
   @media (min-width: $desktop-width) {
     min-width: 204px;
-    margin-top: 45px;
+    margin-top: 22px;
+    min-height: 72px;
   }
 }
 
@@ -70,8 +64,8 @@
     grid-template-columns: 246px 246px;
     grid-template-rows: 280px 280px;
     gap: 37px 136px;
-    align-items: flex-end;
-    counter-reset: example 1;
+    align-items: center;
+    counter-reset: advantages 1;
   }
 
   @media (min-width: $desktop-width) {
@@ -89,12 +83,30 @@
   height: 60px;
   margin-bottom: 20px;
   width: 200px;
-  margin-left: 100px;
+  margin-left: 80px;
 
   @media (min-width: $tablet-width) {
     min-width: 240px;
     margin-left: 30px;
     padding-bottom: 57px;
+    counter-increment: advantages;
+    margin-top: 80px;
+    position: relative;
+
+    ::after {
+      content: counter(advantages);
+      position: absolute;
+      right: 0;
+      top: -150px;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      width: 112px;
+      height: 280px;
+      font-weight: 400;
+      font-family: $Oswald;
+      z-index: -1;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -129,7 +141,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -75px;
+    top: -105px;
   }
 }
 
@@ -154,7 +166,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -75px;
+    top: -105px;
   }
 }
 
@@ -179,7 +191,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -75px;
+    top: -105px;
   }
 }
 
@@ -204,6 +216,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -75px;
+    top: -105px;
   }
 }

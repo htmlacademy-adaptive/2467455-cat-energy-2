@@ -1,3 +1,10 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: $Oswald;
   font-weight: 400;
@@ -13,19 +20,35 @@ ul {
   margin: 0;
   padding: 0;
 }
-
-p {
-  margin: 0;
-}
-
-h1 {
-  margin: 0;
-}
-
-h2 {
-  margin: 0;
-}
-
+// .page-body {
+//   p,
+//   h1,
+//   h2,
+//   h3 {
+//     margin: 0;
+//   }
+// }
+p,
+h1,
+h2,
 h3 {
   margin: 0;
 }
+
+
+.container {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1240px;
+    padding: 0 10px;
+  }
+}
+

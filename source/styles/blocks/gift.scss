@@ -3,12 +3,17 @@
   height: 290px;
   margin: 0 auto;
   margin-top: 33px;
-  background-image: url("../../icons/backgift.svg");
+  background-image: url("../../images/backgiftmobile@1x.png");
+  background-size: contain;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: end;
   position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../images/backgiftmobile@2x.png");
+  }
 
   &::after {
     position: absolute;
@@ -17,6 +22,16 @@
     height: 80px;
     background-image: url("../../icons/gift.svg");
     top: 58px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 707px;
+    height: 200px;
+    background-image: url("../../images/backgifttablet@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../images/backgifttablet@2x.png");
+    }
   }
 }
 

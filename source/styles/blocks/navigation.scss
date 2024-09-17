@@ -2,26 +2,19 @@
   display: flex;
   flex-direction: column;
   height: 264px;
-  width: 320px;
-  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 768px;
     height: 50px;
-    margin: 0 auto;
     margin-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
-    margin: 0 auto;
-    margin-top: 25px;
-    margin-left: 110px;
-    margin-right: 110px;
+    margin-top: 55px;
+    height: 59px;
   }
 }
 
@@ -34,14 +27,13 @@
 .navigation__container {
   width: 280px;
   height: 38px;
-  margin: 13px 20px;
+  margin: 13px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   @media (min-width: $tablet-width) {
     width: 174px;
-    margin: 0;
   }
 }
 
@@ -56,7 +48,8 @@
     display: flex;
     min-width: 436px;
     flex-wrap: wrap;
-    margin-top: 23px;
+    align-self: baseline;
+    justify-content: space-between;
   }
 }
 
@@ -99,7 +92,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    color: red;
+    color: #ffffff;
   }
 }
 
@@ -109,7 +102,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #ffffff;
   }
 }
 
