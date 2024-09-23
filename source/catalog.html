@@ -32,13 +32,13 @@
       </div>
       <ul class="navigation__list">
         <li class="navigation__item">
-          <a class="navigation__link" href="index.html">Главная</a>
+          <a class="navigation__link navigation__link--catalog" href="index.html">Главная</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link navigation__link--current" href="catalog.html">Каталог продукции</a>
+          <a class="navigation__link navigation__link--current navigation__link--catalog navigation__link--current-catalog" href="catalog.html">Каталог продукции</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link" href="#">Подбор программы</a>
+          <a class="navigation__link navigation__link--catalog" href="#">Подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -240,52 +240,57 @@
             </div>
             <button class="product__button" type="button">Заказать</button>
           </li>
+          <li class="products-catalog__item product">
+            <div class="more">
+              <b class="more__info">Показать еще 100500 товаров</b>
+              <p class="more__description">На самом деле вкусов гораздо больше!</p>
+              <button class="more__button" type="button">Показать все</button>
+            </div>
+          </li>
         </ul>
-        <div class="more">
-          <b class="more__info">Показать еще 100500 товаров</b>
-          <p class="more__description">На самом деле вкусов гораздо больше!</p>
-          <button class="more__button" type="button">Показать все</button>
-        </div>
+
       </div>
     </section>
     <section class="other-products container">
       <h2 class="other-products__title">Дополнительные товары</h2>
-      <ul class="other-products__list">
-        <li class="other-products_item">
-          <b class="other-products__name">Сахарозаменитель</b>
-          <div class="other-products__wrapper">
-            <p class="other-products__class">1 упаковка (100 г)</p>
-            <p class="other-products__price">200 ₽</p>
-          </div>
-          <button class="other-products__button" type="button">Заказать</button>
-        </li>
-        <li class="other-products_item">
-          <b class="other-products__name">Питьевая вода</b>
-          <div class="other-products__wrapper">
-            <p class="other-products__class">5 литров</p>
-            <p class="other-products__price">50 ₽</p>
-          </div>
-          <button class="other-products__button" type="button">Заказать</button>
-        </li>
-        <li class="other-products_item">
-          <b class="other-products__name">Молоко</b>
-          <div class="other-products__wrapper">
-            <p class="other-products__class">1 литр</p>
-            <p class="other-products__price">100 ₽</p>
-          </div>
-          <button class="other-products__button" type="button">Заказать</button>
-        </li>
-        <li class="other-products_item">
-          <b class="other-products__name">Витамины</b>
-          <div class="other-products__wrapper">
-            <p class="other-products__class">1 упаковка (30 г)</p>
-            <p class="other-products__price">300 ₽</p>
-          </div>
-          <button class="other-products__button" type="button">Заказать</button>
-        </li>
-      </ul>
-      <div class="other-products__gift gift">
-        <p class="gift__description">Закажите все и получите чехол для кота в подарок!</p>
+      <div class="other-products__container">
+        <ul class="other-products__list">
+          <li class="other-products_item">
+            <b class="other-products__name">Сахарозаменитель</b>
+            <div class="other-products__wrapper">
+              <p class="other-products__class">1 упаковка (100 г)</p>
+              <p class="other-products__price">200 ₽</p>
+            </div>
+            <button class="other-products__button" type="button">Заказать</button>
+          </li>
+          <li class="other-products_item">
+            <b class="other-products__name">Питьевая вода</b>
+            <div class="other-products__wrapper">
+              <p class="other-products__class">5 литров</p>
+              <p class="other-products__price">50 ₽</p>
+            </div>
+            <button class="other-products__button" type="button">Заказать</button>
+          </li>
+          <li class="other-products_item">
+            <b class="other-products__name">Молоко</b>
+            <div class="other-products__wrapper">
+              <p class="other-products__class">1 литр</p>
+              <p class="other-products__price">100 ₽</p>
+            </div>
+            <button class="other-products__button" type="button">Заказать</button>
+          </li>
+          <li class="other-products_item">
+            <b class="other-products__name">Витамины</b>
+            <div class="other-products__wrapper">
+              <p class="other-products__class">1 упаковка (30 г)</p>
+              <p class="other-products__price">300 ₽</p>
+            </div>
+            <button class="other-products__button" type="button">Заказать</button>
+          </li>
+        </ul>
+        <div class="other-products__gift gift">
+          <p class="gift__description">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
       </div>
     </section>
     <section class="subscribe container">

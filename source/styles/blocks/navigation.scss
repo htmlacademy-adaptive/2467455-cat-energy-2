@@ -96,6 +96,12 @@
   }
 }
 
+.navigation__link--catalog {
+  @media (min-width: $desktop-width) {
+    color: #000000;
+  }
+}
+
 .navigation__link--current {
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid #68b738;
@@ -103,6 +109,12 @@
 
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid #ffffff;
+  }
+}
+
+.navigation__link--current-catalog {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid #68b738;
   }
 }
 

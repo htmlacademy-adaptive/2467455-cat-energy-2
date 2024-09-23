@@ -31,6 +31,11 @@
     height: 20px;
     border-bottom: 1px solid #cdcdcd;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+    margin: auto;
+  }
 }
 
 .product__item-title {
@@ -95,6 +100,10 @@
   @media (min-width: $tablet-width) {
     width: 250px;
     margin: 0 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
   }
 }
 
