@@ -1,7 +1,6 @@
 .product__container {
   display: grid;
   grid-template-columns: 140px 140px;
-  grid-template-rows: 107px;
   margin-bottom: 17px;
 
   @media (min-width: $tablet-width) {
