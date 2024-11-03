@@ -16,6 +16,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #444444;
+  margin-top: 11px;
 }
 
 .copyright__logo {
@@ -33,7 +34,7 @@
     mask-size: 27px 34px;
     background-color: #666666;
     right: 0;
-    top: 0;
+    top: 5px;
   }
 
   &:hover::after,

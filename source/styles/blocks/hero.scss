@@ -118,6 +118,7 @@
   height: 40px;
   margin: 0 auto;
   border: none;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     margin-top: -580px;
@@ -138,7 +139,7 @@
   }
 
   &:active {
-    opacity: 0.3;
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
