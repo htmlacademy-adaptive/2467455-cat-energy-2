@@ -37,8 +37,9 @@
       position: absolute;
       content: "";
       background-image: url("../../images/backcatdesktop@1x.png");
-      background-size: contain;
-      width: 720px;
+      background-repeat: no-repeat;
+      background-color: #5eaa2f;
+      width: 100vw;
       height: 694px;
       left: 560px;
       top: -80px;
