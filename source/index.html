@@ -6,7 +6,6 @@
   <title>Cat energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="./styles/styles.css">
-  <script src="scripts/index.js" defer></script>
   <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
@@ -18,7 +17,7 @@
 
 <body class="page">
   <header class="main-header">
-    <nav class="navigation container">
+    <nav class="navigation navigation--closed navigation--nojs container">
       <div class="navigation__container">
         <a class="navigation__logo-image logo" href="index.html">
           <picture>
@@ -28,7 +27,7 @@
           </picture>
           <img class="logo__text" src="images/logotext.svg" width="101" height="18" alt="Товарный знак Cat energy.">
         </a>
-        <button class="navigation__menu navigation__menu--close" type="button" aria-label="Выпадающий список меню"></button>
+        <button class="navigation__menu navigation__menu--toggle" type="button" aria-label="Выпадающий список меню"></button>
       </div>
       <ul class="navigation__list">
         <li class="navigation__item">
@@ -174,6 +173,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="/scripts/index.js"></script>
 </body>
 
 </html>
