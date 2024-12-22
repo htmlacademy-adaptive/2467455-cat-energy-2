@@ -1,5 +1,5 @@
 .hero {
-  height: 500px;
+  height: 480px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -21,7 +21,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-height: 850px;
+    min-height: 855px;
 
     &::after {
       background-image: none;
@@ -31,7 +31,7 @@
   @media (min-width: $desktop-width) {
     position: relative;
     min-height: 600px;
-    margin-bottom: 82px;
+    margin-bottom: 62px;
 
     &::after {
       position: absolute;
@@ -41,8 +41,8 @@
       background-color: #5eaa2f;
       width: 100vw;
       height: 694px;
-      left: 560px;
-      top: -80px;
+      left: 620px;
+      top: -115px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../../images/backcatdesktop@2x.png");
@@ -60,7 +60,6 @@
   min-width: 249px;
   height: 72px;
   margin-top: 27px;
-  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     color: #000000;
@@ -74,8 +73,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 110px;
-    margin-left: 70px;
+    margin-top: 111px;
+    margin-left: 80px;
     margin-bottom: 40px;
   }
 }
@@ -86,14 +85,13 @@
   text-transform: uppercase;
   color: #ffffff;
   width: 198px;
-  margin: auto;
-  margin-bottom: 29px;
+  margin: 25px auto;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: #000000;
-    margin-top: 40px;
+    margin-top: 48px;
     margin-left: 90px;
     margin-bottom: 21px;
     width: 283px;
@@ -101,7 +99,7 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 52px;
-    margin-left: 70px;
+    margin-left: 80px;
   }
 }
 
@@ -131,8 +129,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -200px;
-    margin-left: 70px;
+    margin-top: -185px;
+    margin-left: 80px;
   }
 
   &:hover {
@@ -146,10 +144,14 @@
 
 .hero__image {
   display: block;
-  margin: 0 auto;
+  margin: 5px auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
 
   @media (min-width: $desktop-width) {
-    margin-top: -300px;
-    margin-right: 280px;
+    margin-top: -315px;
+    margin-right: 225px;
   }
 }

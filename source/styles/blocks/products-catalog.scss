@@ -28,7 +28,7 @@
   line-height: 36px;
   font-weight: 400;
   width: 260px;
-  margin: 27px auto 41px;
+  margin: 29px 0 41px;
 
   @media (min-width: $tablet-width) {
     width: 435px;
@@ -45,8 +45,19 @@
 
 
 .products-catalog__item {
-  border-top: 1px solid #ebebeb;
-  padding-top: 20px;
+  position: relative;
+  padding-top: 19px;
+  padding-bottom: 24px;
+
+  ::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 1px;
+    background-color: #ebebeb;
+    width: 100vw;
+    left: calc((100vw - 100%) / -2);
+  }
 
   @media (min-width: $tablet-width) {
     width: 324px;

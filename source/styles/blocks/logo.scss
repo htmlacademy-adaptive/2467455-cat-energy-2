@@ -1,3 +1,15 @@
 .logo__text {
   align-self: center;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 15px;
+    width: 118px;
+    height: 21px;
+  }
+}
+
+.logo__image {
+  @media (min-width: $desktop-width) {
+    margin-top: 4px;
+  }
 }

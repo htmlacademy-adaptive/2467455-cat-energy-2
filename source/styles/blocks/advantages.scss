@@ -4,11 +4,12 @@
   @media (min-width: $tablet-width) {
     min-height: 700px;
     border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 372px;
-    padding-bottom: 69px;
+    min-height: 350px;
+    padding-bottom: 0;
     border-bottom: 0;
   }
 }
@@ -25,9 +26,8 @@
     line-height: 60px;
     font-size: 60px;
     width: 375px;
-    margin-left: 30px;
     margin-bottom: 32px;
-    margin-top: 45px;
+    margin-top: 35px;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,15 +43,19 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+  padding-top: 4px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    padding: 0;
+    margin: 0;
+    margin-top: 2px;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 204px;
-    margin-top: 22px;
+    margin-top: 1px;
     min-height: 72px;
   }
 }
@@ -69,13 +73,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    width: 1220px;
+    display: grid;
+    grid-template-columns: 230px 246px 248px 250px;
+    grid-template-rows: 280px;
     margin: 0 auto;
     gap: 0;
     justify-content: space-between;
     align-items: center;
-    min-height: 280px;
   }
 }
 
@@ -86,11 +90,11 @@
   margin-left: 80px;
 
   @media (min-width: $tablet-width) {
-    min-width: 240px;
-    margin-left: 30px;
+    min-width: 230px;
+    margin-left: 0;
     padding-bottom: 57px;
     counter-increment: advantages;
-    margin-top: 80px;
+    margin-top: 100px;
     position: relative;
 
     ::after {
@@ -110,7 +114,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 230px;
+    min-width: 235px;
     padding-bottom: 0;
     margin-left: 0;
   }
@@ -141,12 +145,16 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -105px;
+    top: -110px;
   }
 }
 
 .advantages__item:nth-child(2) {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 14px;
+  }
 }
 
 .advantages__item:nth-child(2)::before {
@@ -166,12 +174,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -105px;
+    top: -110px;
+    left: 15px;
   }
 }
 
 .advantages__item:nth-child(3) {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 10px;
+  }
 }
 
 .advantages__item:nth-child(3)::before {
@@ -191,12 +204,17 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -105px;
+    top: -110px;
+    left: 10px;
   }
 }
 
 .advantages__item:nth-child(4) {
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 5px;
+  }
 }
 
 .advantages__item:nth-child(4)::before {
@@ -216,6 +234,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -105px;
+    top: -110px;
+    left: 5px;
   }
 }
