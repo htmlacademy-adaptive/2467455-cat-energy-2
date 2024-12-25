@@ -198,3 +198,10 @@
   top: 63px;
 }
 
+.navigation--nojs .navigation__menu--toggle {
+  display: none;
+}
+
+.navigation--nojs .navigation__list {
+  display: block;
+}

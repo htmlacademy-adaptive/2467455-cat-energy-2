@@ -1,5 +1,5 @@
 .map {
-  height: 474px;
+  min-height: 474px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
@@ -116,7 +116,6 @@
 .map__image {
   width: 100vw;
   left: calc((100vw - 100%) / -2);
-  background-color: green;
   background-size: 100vw;
 
   @media (min-width: $tablet-width) {

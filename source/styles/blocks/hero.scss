@@ -1,5 +1,4 @@
 .hero {
-  height: 480px;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -8,9 +7,10 @@
     position: absolute;
     content: "";
     background-image: url("../../images/backcatmobile@1x.png");
+    background-repeat: no-repeat;
     background-size: contain;
     width: 320px;
-    height: 302px;
+    min-height: calc(100% - 178px);
     top: 0;
     left: 0;
     z-index: -1;
@@ -58,7 +58,6 @@
   font-weight: 400;
   color: #ffffff;
   min-width: 249px;
-  height: 72px;
   margin-top: 27px;
 
   @media (min-width: $tablet-width) {
@@ -114,7 +113,7 @@
   background-color: #68b738;
   display: block;
   width: 280px;
-  height: 40px;
+  min-height: 40px;
   margin: 0 auto;
   border: none;
   outline: none;
@@ -125,7 +124,7 @@
     font-size: 20px;
     line-height: 24px;
     width: 244px;
-    height: 54px;
+    min-height: 54px;
   }
 
   @media (min-width: $desktop-width) {
