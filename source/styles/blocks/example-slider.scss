@@ -1,11 +1,12 @@
 .example-slider {
   background-color: #eaeaea;
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
     min-height: 1000px;
+    padding-top: 23px;
   }
 
   @media (min-width: $desktop-width) {
@@ -137,7 +138,7 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
-  margin-bottom: 42px;
+  margin-bottom: 40px;
   margin-top: 5px;
   text-align: start;
 
@@ -163,6 +164,7 @@
   line-height: 18px;
   color: #444444;
   width: 280px;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -215,7 +217,7 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    height: 72px;
+    min-height: 72px;
   }
 
   @media (min-width: $desktop-width) {
@@ -262,7 +264,7 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
-    height: 72px;
+    min-height: 72px;
   }
 
   @media (min-width: $desktop-width) {
@@ -307,23 +309,31 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 20px;
     width: 174px;
     text-align: end;
-    margin-top: 13px;
+    margin-top: 16px;
+    margin-right: 3px;
   }
 
   @media (min-width: $desktop-width) {
     width: 372px;
     text-align: start;
     margin-left: 12px;
-    margin-top: 19px;
+    margin-top: 24px;
   }
 }
 
 .example-slider__cost span {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 9px;
+  }
+
   @media (min-width: $desktop-width) {
-    margin-left: 60px;
+    margin-right: 45px;
+    margin-top: -20px;
+    text-align: end;
   }
 }
 

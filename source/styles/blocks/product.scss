@@ -28,14 +28,19 @@
 
   @media (min-width: $tablet-width) {
     width: 250px;
-    height: 20px;
+    height: 25px;
     border-bottom: 1px solid #cdcdcd;
   }
 
   @media (min-width: $desktop-width) {
     width: 169px;
     margin: auto;
+    height: 26px;
   }
+}
+
+.product__wrapper-description {
+  margin: 0;
 }
 
 .product__item-title {
@@ -47,7 +52,7 @@
   width: 76px;
   text-align: start;
   margin-bottom: 2px;
-  margin-top: 2px;
+  margin-top: 3px;
 
   @media (min-width: $tablet-width) {
     width: 135px;
@@ -55,7 +60,13 @@
     line-height: 24px;
     text-align: center;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+    margin-top: 4px;
+    margin-left: 54px;
   }
 }
 
@@ -70,10 +81,14 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
+    row-gap: 7px;
     font-size: 16px;
     line-height: 20px;
-    margin-bottom: 32px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 33px;
   }
 }
 
@@ -82,6 +97,12 @@
 
   @media (min-width: $tablet-width) {
     display: block;
+    margin: 29px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 29px;
+    margin-left: 44px;
   }
 }
 
@@ -100,7 +121,7 @@
 
   @media (min-width: $tablet-width) {
     width: 250px;
-    margin: 0 37px;
+    margin: 2px 37px;
   }
 
   @media (min-width: $desktop-width) {
@@ -119,4 +140,48 @@
 
 .product__container picture {
   z-index: 10;
+}
+
+.product__image--big {
+  margin-top: 5px;
+  margin-left: 28px;
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin: 14px 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 17px;
+    margin-left: 37px;
+  }
+}
+
+.product__image--small {
+  margin-top: 16px;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin: 28px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 27px;
+    margin-left: 43px;
+  }
+}
+
+.product__image--middle {
+  margin-top: 13px;
+  margin-left: 34px;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin: 28px 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 27px;
+    margin-left: 42px;
+  }
 }

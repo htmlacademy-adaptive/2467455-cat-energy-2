@@ -7,11 +7,12 @@
     position: absolute;
     content: "";
     background-image: url("../../images/backcatmobile@1x.png");
+    background-color: #5eaa2f;
     background-repeat: no-repeat;
     background-size: contain;
     width: 320px;
-    min-height: calc(100% - 178px);
-    top: 0;
+    min-height: calc(100% - 176px);
+    top: 1px;
     left: 0;
     z-index: -1;
 
@@ -25,6 +26,7 @@
 
     &::after {
       background-image: none;
+      background-color: #ffffff;
     }
   }
 
@@ -58,7 +60,8 @@
   font-weight: 400;
   color: #ffffff;
   min-width: 249px;
-  margin-top: 27px;
+  margin-top: 28px;
+  margin-left: 2px;
 
   @media (min-width: $tablet-width) {
     color: #000000;
@@ -85,13 +88,14 @@
   color: #ffffff;
   width: 198px;
   margin: 25px auto;
+  margin-left: 40px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: #000000;
-    margin-top: 48px;
-    margin-left: 90px;
+    margin-top: 0;
+    margin-left: 89px;
     margin-bottom: 21px;
     width: 283px;
   }
@@ -120,10 +124,10 @@
 
   @media (min-width: $tablet-width) {
     margin-top: -580px;
-    margin-left: 90px;
+    margin-left: 89px;
     font-size: 20px;
     line-height: 24px;
-    width: 244px;
+    width: 242px;
     min-height: 54px;
   }
 
@@ -143,7 +147,7 @@
 
 .hero__image {
   display: block;
-  margin: 5px auto;
+  margin: 5px auto 2px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;

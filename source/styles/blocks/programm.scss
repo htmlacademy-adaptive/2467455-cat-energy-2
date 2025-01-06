@@ -43,7 +43,7 @@
   margin-left: 9px;
 
   @media (min-width: $tablet-width) {
-    margin-left: 53px;
+    margin-left: 52px;
   }
 
   @media (min-width: $desktop-width) {
@@ -78,7 +78,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    margin-left: 52px;
+    margin-left: 51px;
     margin-bottom: 28px;
     width: 340px;
     border-bottom: none;
@@ -88,6 +88,7 @@
     width: 457px;
     margin-bottom: 23px;
     min-height: 72px;
+    margin-left: 53px;
   }
 }
 
@@ -101,7 +102,7 @@
   position: relative;
   width: 144px;
   text-align: start;
-  margin-top: 7px;
+  margin-top: 5px;
   margin-left: 15px;
   border-top: 1px solid #d9d9d9;
   border: none;
@@ -110,8 +111,9 @@
     font-size: 20px;
     line-height: 30px;
     padding: 0;
-    margin-left: 52px;
-    margin-bottom: 93px;
+    margin-left: 50px;
+    margin-bottom: 53px;
+    margin-top: 7px;
   }
 
   @media (min-width: $desktop-width) {
@@ -129,12 +131,13 @@
 .programm__list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   width: 280px;
   margin: auto;
 
   @media (min-width: $tablet-width) {
     width: 708px;
+    gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -163,13 +166,13 @@
   content: "";
   background-image: url("../../icons/stack.svg#slimcat");
   width: 50px;
-  height: 53px;
+  min-height: 53px;
   top: 22px;
   left: 20px;
 
   @media (min-width: $tablet-width) {
     width: 200px;
-    height: 211px;
+    min-height: 211px;
     top: 80px;
     left: 445px;
   }
@@ -177,7 +180,7 @@
   @media (min-width: $desktop-width) {
     width: 100px;
     height: 106px;
-    top: 39px;
+    top: -13px;
     left: 52px;
   }
 }
@@ -191,13 +194,13 @@
   content: "";
   background-image: url("../../icons/stack.svg#procat");
   width: 67px;
-  height: 50px;
+  min-height: 50px;
   top: 25px;
   left: 12px;
 
   @media (min-width: $tablet-width) {
     width: 268px;
-    height: 200px;
+    min-height: 200px;
     top: 90px;
     left: 415px;
   }
@@ -205,7 +208,7 @@
   @media (min-width: $desktop-width) {
     width: 134px;
     height: 100px;
-    top: 45px;
+    top: -4px;
     left: 35px;
   }
 }

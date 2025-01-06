@@ -1,7 +1,7 @@
 .gift {
   width: 280px;
   height: 290px;
-  margin-top: 33px;
+  margin-top: 34px;
   background-image: url("../../images/backgiftmobile@1x.png");
   background-size: contain;
   display: flex;
@@ -23,11 +23,12 @@
     top: 58px;
 
     @media (min-width: $tablet-width) {
-      left: 77px;
+      left: 79px;
+      top: 57px;
     }
 
     @media (min-width: $desktop-width) {
-      left: 85px;
+      left: 81px;
     }
   }
 
@@ -65,10 +66,12 @@
   color: #ffffff;
   width: 161px;
   margin-bottom: 43px;
+  margin-top: 1px;
+  margin-left: -2px;
 
   @media (min-width: $tablet-width) {
     text-align: start;
-    margin-right: 120px;
+    margin-right: 124px;
     margin-bottom: 0;
   }
 

@@ -3,33 +3,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-top: 1px solid #ebebeb;
-  border-bottom: 1px solid #ebebeb;
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 4px;
 
-  &::after {
+  &::before {
+    content: "";
     position: absolute;
-    content: "+";
-    width: 60px;
-    height: 60px;
-    color: #d3d3d3;
-    font-size: 50px;
-    font-family: "Times New Roman", "Times", serif;
-    top: 10px;
-    left: 45%;
+    bottom: -2px;
+    height: 1px;
+    background-color: #ebebeb;
+    width: 100vw;
+    left: calc((100vw - 100%) / -2);
 
     @media (min-width: $tablet-width) {
-      width: 90px;
-      height: 90px;
-      font-size: 90px;
-      top: 30px;
-      left: 43%;
-      border: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 40%;
+      height: 0;
     }
   }
 
@@ -43,26 +30,6 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-  }
-}
-
-.more__info {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #111111;
-  width: 204px;
-  margin-top: 78px;
-  margin-bottom: 8px;
-  text-align: center;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 24px;
-    width: 134px;
-    margin-top: 160px;
-    margin-bottom: 23px;
   }
 }
 
@@ -80,6 +47,7 @@
     line-height: 18px;
     width: 170px;
     margin-bottom: 82px;
+    margin-top: 0;
   }
 }
 
@@ -102,5 +70,60 @@
 
   @media (min-width: $desktop-width) {
     width: 169px;
+  }
+}
+
+.more__info {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  width: 204px;
+  margin-top: 80px;
+  margin-bottom: -4px;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    display: block;
+    color: #d3d3d3;
+    width: 30px;
+    height: 2px;
+    left: 5px;
+    top: -25px;
+    bottom: 5px;
+    z-index: 9;
+    transform: rotate(90deg);
+  }
+
+  &::after {
+    content: " ";
+    position: absolute;
+    display: block;
+    color: #d3d3d3;
+    height: 2px;
+    width: 30px;
+    top: -40px;
+    left: 88px;
+    z-index: 9;
+
+    @media (min-width: $tablet-width) {
+
+    }
+
+    @media (min-width: $desktop-width) {
+
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 134px;
+    margin-top: 160px;
+    margin-bottom: 23px;
   }
 }
