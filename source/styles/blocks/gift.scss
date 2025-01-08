@@ -2,7 +2,7 @@
   width: 280px;
   height: 290px;
   margin-top: 34px;
-  background-image: url("../../images/backgiftmobile@1x.png");
+  background-image: url("../../images/backgiftmobile@1x.webp");
   background-size: contain;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@
   position: relative;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../images/backgiftmobile@2x.png");
+    background-image: url("../../images/backgiftmobile@2x.webp");
   }
 
   &::after {
@@ -35,10 +35,10 @@
   @media (min-width: $tablet-width) {
     width: 707px;
     height: 200px;
-    background-image: url("../../images/backgifttablet@1x.png");
+    background-image: url("../../images/backgifttablet@1x.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../images/backgifttablet@2x.png");
+      background-image: url("../../images/backgifttablet@2x.webp");
     }
     flex-direction: row;
     margin-top: 70px;
@@ -47,10 +47,10 @@
   @media (min-width: $desktop-width) {
     width: 245px;
     height: 288px;
-    background-image: url("../../images/backgiftdesktop@1x.png");
+    background-image: url("../../images/backgiftdesktop@1x.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../images/backgiftdesktop@2x.png");
+      background-image: url("../../images/backgiftdesktop@2x.webp");
     }
     flex-direction: column;
     margin: 0;

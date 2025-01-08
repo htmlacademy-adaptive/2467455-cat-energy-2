@@ -38,7 +38,7 @@
     &::after {
       position: absolute;
       content: "";
-      background-image: url("../../images/backcatdesktop@1x.png");
+      background-image: url("../../images/backcatdesktop@1x.webp");
       background-repeat: no-repeat;
       background-color: #5eaa2f;
       width: 100vw;
@@ -47,7 +47,7 @@
       top: -115px;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("../../images/backcatdesktop@2x.png");
+        background-image: url("../../images/backcatdesktop@2x.webp");
       }
     }
   }
