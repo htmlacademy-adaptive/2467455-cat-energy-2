@@ -1,0 +1,153 @@
+.map {
+  min-height: 474px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    min-height: 598px;
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 400px;
+    padding: 0;
+    position: relative;
+    margin: 0;
+  }
+}
+
+.map-catalog {
+  @media (min-width: $tablet-width) {
+    margin-top: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.map .container {
+  position: relative;
+  padding: 0;
+}
+
+.map__contacts {
+  width: 320px;
+  margin: 0;
+  display: flex;
+  padding: 26px 20px;
+  background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 63px 70px;
+    min-height: 200px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 80px;
+    width: 565px;
+    min-height: 199px;
+    position: absolute;
+    top: 65px;
+    left: 10px;
+  }
+}
+
+.map__contacts-catalog {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  padding: 26px 20px;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 60px 70px;
+    justify-content: space-between;
+    min-height: 190px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 80px;
+    width: 565px;
+    min-height: 199px;
+    position: absolute;
+    top: 95px;
+    left: 10px;
+    background-color: #ffffff;
+  }
+}
+
+.map__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  width: 140px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 163px;
+    margin: 0;
+  }
+}
+
+.map__address {
+  font-family: $Lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  width: 140px;
+  font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    width: 157px;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.map__image {
+  width: 100vw;
+  left: calc((100vw - 100%) / -2);
+  background-size: 100vw;
+  margin-left: -4px;
+  display: block;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    object-fit: cover;
+  }
+}
+
+.map__map iframe {
+  display: block;
+  border: none;
+  width: 100vw;
+  left: calc((100vw - 100%) / -2);
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}

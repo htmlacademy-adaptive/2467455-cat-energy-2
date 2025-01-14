@@ -1,0 +1,245 @@
+.advantages {
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 700px;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 350px;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+}
+
+.advantages__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: start;
+  width: 280px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    line-height: 60px;
+    font-size: 60px;
+    width: 375px;
+    margin-bottom: 69px;
+    margin-top: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+}
+
+.advantages__description {
+  font-family: $Lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  padding-top: 2px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
+    min-width: 242px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 204px;
+    margin-top: 12px;
+    min-height: 72px;
+  }
+}
+
+.advantages__list {
+  min-height: 300px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 246px 246px;
+    grid-template-rows: 280px 280px;
+    gap: 37px 136px;
+    align-items: center;
+    counter-reset: advantages 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 230px 246px 248px 250px;
+    grid-template-rows: 280px;
+    margin: 0 auto;
+    gap: 0;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.advantages__item {
+  min-height: 60px;
+  margin-bottom: 20px;
+  width: 200px;
+  margin-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 230px;
+    margin-left: 0;
+    padding-bottom: 57px;
+    counter-increment: advantages;
+    margin-top: 100px;
+    position: relative;
+
+    ::after {
+      content: counter(advantages);
+      position: absolute;
+      right: 4px;
+      top: -150px;
+      font-size: 280px;
+      line-height: 280px;
+      color: #f2f2f2;
+      width: 112px;
+      height: 280px;
+      font-weight: 400;
+      font-family: $Oswald;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 235px;
+    padding-bottom: 0;
+    margin-left: 0;
+
+    ::after {
+      right: 0;
+      top: -139px;
+    }
+  }
+}
+
+.advantages__item:nth-child(1) {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    counter-increment: example 1;
+  }
+}
+
+.advantages__item:nth-child(1)::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../icons/stack.svg#leave");
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: -80px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -110px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -99px;
+  }
+}
+
+.advantages__item:nth-child(2) {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 14px;
+  }
+}
+
+.advantages__item:nth-child(2)::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../icons/stack.svg#bottle");
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: -80px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -110px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -99px;
+    left: 15px;
+  }
+}
+
+.advantages__item:nth-child(3) {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 10px;
+  }
+}
+
+.advantages__item:nth-child(3)::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../icons/stack.svg#iconeat");
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: -80px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -110px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -99px;
+    left: 10px;
+  }
+}
+
+.advantages__item:nth-child(4) {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 5px;
+  }
+}
+
+.advantages__item:nth-child(4)::before {
+  position: absolute;
+  content: "";
+  background-image: url("../../icons/stack.svg#clock");
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: -80px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+    top: -110px;
+    left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -99px;
+    left: 5px;
+  }
+}
