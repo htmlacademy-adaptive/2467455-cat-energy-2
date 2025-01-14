@@ -29,8 +29,10 @@
       background-color: #ffffff;
     }
   }
+}
 
-  @media (min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+  .hero {
     position: relative;
     min-height: 600px;
     margin-bottom: 62px;

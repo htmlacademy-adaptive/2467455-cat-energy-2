@@ -59,15 +59,16 @@
     min-width: 436px;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-right: 5px;
+    margin-right: 3px;
     margin-top: 12px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    min-width: 475px;
+    min-width: 477px;
     margin-right: 0;
+    margin-top: 9px;
   }
 }
 
@@ -104,7 +105,7 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    height: 36px;
+    height: 30px;
 
     &:hover {
       opacity: 0.6;
@@ -117,6 +118,7 @@
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
+    height: 40px;
 
     &:hover {
       opacity: 0.6;
@@ -150,7 +152,7 @@
   }
 }
 
-.navigation--closed .navigation__menu--toggle::before {
+.navigation--closed .navigation__toggle::before {
   content: "";
   position: absolute;
   background-image: url("../../icons/stack.svg#menubutton");
@@ -177,13 +179,13 @@
   }
 }
 
-.navigation__menu--toggle {
+.navigation__toggle {
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
-.navigation--opened .navigation__menu--toggle::after {
+.navigation--opened .navigation__toggle::after {
   content: "";
   position: absolute;
   background-image: url("../../icons/stack.svg#closebutton");
@@ -204,7 +206,7 @@
 
 .navigation--opened .navigation__wrapper {
   position: absolute;
-  z-index: 10;
+  z-index: 11;
   background-color: #ffffff;
   width: 100%;
   align-self: center;
@@ -218,7 +220,7 @@
   }
 }
 
-.navigation--nojs .navigation__menu--toggle {
+.navigation--nojs .navigation__toggle {
   display: none;
 }
 
@@ -230,4 +232,3 @@
     align-items: center;
   }
 }
-

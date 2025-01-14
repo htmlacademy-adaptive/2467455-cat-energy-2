@@ -1,5 +1,5 @@
 const navMain = document.querySelector('.navigation');
-const navToggle = document.querySelector('.navigation__menu--toggle');
+const navToggle = document.querySelector('.navigation__toggle');
 
 navMain.classList.remove('navigation--nojs');
 navMain.classList.add('navigation--closed');

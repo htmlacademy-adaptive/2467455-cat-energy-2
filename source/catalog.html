@@ -19,7 +19,7 @@
 </head>
 
 <body class="page">
-  <header class="main-header">
+  <header class="main-header" data-test="header">
     <nav class="navigation navigation--closed navigation--nojs container">
       <div class="navigation__container">
         <a class="navigation__logo-image logo" href="index.html">
@@ -30,7 +30,7 @@
           </picture>
           <img class="logo__text" src="images/logotext.svg" width="101" height="18" alt="Товарный знак Cat energy.">
         </a>
-        <button class="navigation__menu--toggle" type="button" aria-label="Выпадающий список меню"></button>
+        <button class="navigation__toggle" type="button" aria-label="Выпадающий список меню"></button>
       </div>
       <div class="navigation__wrapper">
         <ul class="navigation__list">
@@ -48,7 +48,7 @@
     </nav>
   </header>
   <main class="main-inner">
-    <section class="products-catalog container">
+    <section class="products-catalog container" data-test="catalog">
       <h1 class="products-catalog__title">Каталог продукции</h1>
       <div class="products-catalog__container">
         <ul class="products-catalog__list">
@@ -279,7 +279,7 @@
 
       </div>
     </section>
-    <section class="other-products container">
+    <section class="other-products container" data-test="additional">
       <h2 class="other-products__title"><span>Дополнительные товары</span></h2>
       <div class="other-products__container">
         <ul class="other-products__list">
@@ -338,9 +338,9 @@
         <button class="subscribe__button" type="submit">Подписаться</button>
       </form>
     </section>
-    <section class="map map-catalog">
+    <section class="map map-catalog" data-test="contacts">
       <div class="container">
-        <div class="map__contacts__catalog">
+        <div class="map__contacts-catalog">
           <h2 class="map__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
           <address class="map__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
         </div>
@@ -354,7 +354,7 @@
       </div>
     </section>
   </main>
-  <footer class="main-footer container">
+  <footer class="main-footer container" data-test="footer">
     <div class="main-footer__wrapper">
       <a class="main-footer__logo" href="index.html">
         <span class="visually-hidden">Товарный знак Cat energy</span>
