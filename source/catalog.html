@@ -11,7 +11,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
   <link rel="manifest" href="/source/manifest.webmanifest.webmanifest">
   <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="preload" type="font/woff2" href="./fonts/lato/Lato-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" type="font/woff" href="./fonts/lato/latoregular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" type="font/woff" href="./fonts/oswald/oswaldregular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" type="font/woff2" href="./fonts/lato/latoregular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" type="font/woff2" href="./fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
@@ -49,7 +51,7 @@
   </header>
   <main class="main-inner">
     <section class="products-catalog container" data-test="catalog">
-      <h1 class="products-catalog__title">Каталог продукции</h1>
+      <h1 class="products-catalog__title no-indent">Каталог продукции</h1>
       <div class="products-catalog__container">
         <ul class="products-catalog__list">
           <li class="products-catalog__item product">
@@ -63,7 +65,7 @@
               </picture>
 
               <div class="product__wrapper">
-                <h2 class="product__item-title">Cat Energy PRO 500 г</h2>
+                <h2 class="product__item-title no-indent">Cat Energy PRO 500 г</h2>
                 <ul class="product__wrapper-list">
                   <li class="product__wrapper-item">
                     <p class="product__wrapper-description">Масса</p>
@@ -95,7 +97,7 @@
               </picture>
 
               <div class="product__wrapper">
-                <h2 class="product__item-title">Cat Energy PRO 1000 г</h2>
+                <h2 class="product__item-title no-indent">Cat Energy PRO 1000 г</h2>
                 <ul class="product__wrapper-list">
                   <li class="product__wrapper-item">
                     <p class="product__wrapper-description">Масса</p>
@@ -125,7 +127,7 @@
               </picture>
 
               <div class="product__wrapper">
-                <h2 class="product__item-title">Cat Energy PRO 500 г</h2>
+                <h2 class="product__item-title no-indent">Cat Energy PRO 500 г</h2>
                 <ul class="product__wrapper-list">
                   <li class="product__wrapper-item">
                     <p class="product__wrapper-description">Масса</p>
@@ -157,7 +159,7 @@
               </picture>
 
               <div class="product__wrapper">
-                <h2 class="product__item-title">Cat Energy PRO 1000 г</h2>
+                <h2 class="product__item-title no-indent">Cat Energy PRO 1000 г</h2>
                 <ul class="product__wrapper-list">
                   <li class="product__wrapper-item">
                     <p class="product__wrapper-description">Масса</p>
@@ -187,7 +189,7 @@
               </picture>
 
               <div class="product__wrapper">
-                <h2 class="product__item-title">Cat Energy Slim 500 г</h2>
+                <h2 class="product__item-title no-indent">Cat Energy Slim 500 г</h2>
                 <ul class="product__wrapper-list">
                   <li class="product__wrapper-item">
                     <p class="product__wrapper-description">Масса</p>
@@ -219,7 +221,7 @@
               </picture>
 
               <div class="product__wrapper">
-                <h2 class="product__item-title">Cat Energy Slim 1000 г</h2>
+                <h2 class="product__item-title no-indent">Cat Energy Slim 1000 г</h2>
                 <ul class="product__wrapper-list">
                   <li class="product__wrapper-item">
                     <p class="product__wrapper-description">Масса</p>
@@ -249,7 +251,7 @@
               </picture>
 
               <div class="product__wrapper">
-                <h2 class="product__item-title">Cat Energy Slim 500 г</h2>
+                <h2 class="product__item-title no-indent">Cat Energy Slim 500 г</h2>
                 <ul class="product__wrapper-list">
                   <li class="product__wrapper-item">
                     <p class="product__wrapper-description">Масса</p>
@@ -280,11 +282,11 @@
       </div>
     </section>
     <section class="other-products container" data-test="additional">
-      <h2 class="other-products__title"><span>Дополнительные товары</span></h2>
+      <h2 class="other-products__title no-indent"><span>Дополнительные товары</span></h2>
       <div class="other-products__container">
         <ul class="other-products__list">
-          <li class="other-products_item">
-            <div class="other-products_item-container">
+          <li class="other-products__item">
+            <div class="other-products__item-container">
               <b class="other-products__name">Сахарозаменитель</b>
               <div class="other-products__wrapper">
                 <p class="other-products__class">1 упаковка (100 г)</p>
@@ -293,8 +295,8 @@
             </div>
             <button class="other-products__button" type="button">Заказать</button>
           </li>
-          <li class="other-products_item">
-            <div class="other-products_item-container">
+          <li class="other-products__item">
+            <div class="other-products__item-container">
               <b class="other-products__name">Питьевая вода</b>
               <div class="other-products__wrapper">
                 <p class="other-products__class">5 литров</p>
@@ -303,8 +305,8 @@
             </div>
             <button class="other-products__button" type="button">Заказать</button>
           </li>
-          <li class="other-products_item">
-            <div class="other-products_item-container">
+          <li class="other-products__item">
+            <div class="other-products__item-container">
               <b class="other-products__name">Молоко</b>
               <div class="other-products__wrapper">
                 <p class="other-products__class">1 литр</p>
@@ -313,8 +315,8 @@
             </div>
             <button class="other-products__button" type="button">Заказать</button>
           </li>
-          <li class="other-products_item">
-            <div class="other-products_item-container">
+          <li class="other-products__item">
+            <div class="other-products__item-container">
               <b class="other-products__name">Витамины</b>
               <div class="other-products__wrapper">
                 <p class="other-products__class">1 упаковка (30 г)</p>
@@ -330,7 +332,7 @@
       </div>
     </section>
     <section class="subscribe container">
-      <h2 class="subscribe__title"><span>Акции и новинки</span></h2>
+      <h2 class="subscribe__title no-indent"><span>Акции и новинки</span></h2>
       <p class="subscribe__description">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <form class="subscribe__form" action=" https://echo.htmlacademy.ru" method="post">
         <label class="visually-hidden" for="newsletter-email">Оформить подписку</label>
@@ -341,12 +343,22 @@
     <section class="map map-catalog" data-test="contacts">
       <div class="container">
         <div class="map__contacts-catalog">
-          <h2 class="map__title">Приглашаем<br>к сотрудничеству дилеров!</h2>
+          <h2 class="map__title no-indent">Приглашаем<br>к сотрудничеству дилеров!</h2>
           <address class="map__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
         </div>
       </div>
       <div class="map__map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="320" height="362" allowfullscreen title="Расположение на карте магазина Cat Energy"></iframe>
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" width="1440" height="400" srcset="images/mapdesktop@1x.webp 1x, images/mapdesktop@2x.webp  2x">
+          <source type="image/webp" media="(min-width: 768px)" width="768" height="400" srcset="images/maptablet@1x.webp 1x, images/maptablet@2x.webp 2x">
+          <source type="image/webp" width="320" height="362" srcset="images/mapmobile@1x.webp 1x, images/mapmobile@2x.webp 2x">
+
+          <source media="(min-width: 1200px)" width="1440" height="400" type="image/png" srcset="images/mapdesktop@1x.png 1x, images/mapdesktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/maptablet@1x.png 1x, images/maptablet@2x.png 2x">
+          <img class="map__image" src="images/mapmobile@1x.png" srcset="images/mapmobile@2x.png 2x" width="320" height="362" loading="lazy" alt="Функциональное питание для котов Cat Energy.">
+        </picture>
+
+        <iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="320" height="362" allowfullscreen title="Расположение на карте магазина Cat Energy"></iframe>
       </div>
     </section>
   </main>
@@ -375,12 +387,9 @@
         </ul>
       </div>
       <div class="main-footer__copyright copyright">
-        <a class="copyright__logo" href="https://htmlacademy.ru">
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">Товарный знак Html Academy</span>
           <p>HTML Academy</p>
-        </a>
-        <a class="copyright__logo-html" href="https://htmlacademy.ru">
-          <span class="visually-hidden">Лого Html Academy</span>
         </a>
       </div>
     </div>

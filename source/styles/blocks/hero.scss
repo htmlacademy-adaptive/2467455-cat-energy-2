@@ -43,9 +43,11 @@
       background-image: url("../../images/backcatdesktop@1x.webp");
       background-repeat: no-repeat;
       background-color: #5eaa2f;
-      width: 100vw;
       height: 694px;
-      left: 620px;
+      left: 50%;
+      right: initial;
+      width: 50vw;
+      background-position: left center;
       top: -115px;
 
       @media (min-resolution: 2dppx) {
@@ -108,21 +110,24 @@
   }
 }
 
-.hero__button {
+.hero__link {
   font-family: $Oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
   color: #ffffff;
   text-transform: uppercase;
   background-color: #68b738;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 280px;
   min-height: 40px;
   margin: 0 auto;
   border: none;
   outline: none;
+  text-decoration: none;
+
 
   @media (min-width: $tablet-width) {
     margin-top: -580px;
@@ -157,6 +162,6 @@
 
   @media (min-width: $desktop-width) {
     margin-top: -315px;
-    margin-right: 225px;
+    margin-right: 220px;
   }
 }

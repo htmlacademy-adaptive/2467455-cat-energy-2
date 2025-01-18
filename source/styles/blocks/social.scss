@@ -46,8 +46,12 @@
   mask-repeat: no-repeat;
   mask-size: 28px 22px;
   background-color: #666666;
+  border: none;
 
-  &:hover,
+  &:hover {
+    background-color: #68b738;
+  }
+
   &:focus {
     background-color: #68b738;
   }
@@ -56,6 +60,10 @@
     background-color: rgba(104, 183, 56, 1);
     opacity: 0.3;
   }
+}
+
+.social__item:focus-within {
+  outline: 1px solid #000000;
 }
 
 .social {

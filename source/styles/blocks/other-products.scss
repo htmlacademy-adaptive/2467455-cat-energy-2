@@ -14,7 +14,7 @@
   }
 }
 
-.other-products_item-container {
+.other-products__item-container {
   @media (min-width: $tablet-width) {
     display: flex;
     width: 632px;
@@ -22,7 +22,7 @@
   }
 }
 
-.other-products_item b {
+.other-products__item b {
   width: 168px;
 }
 
@@ -93,7 +93,7 @@
   }
 }
 
-.other-products_item {
+.other-products__item {
   min-height: 128px;
   padding-top: 12px;
   padding-bottom: 19px;
@@ -134,7 +134,7 @@
   }
 }
 
-.other-products_item:last-child {
+.other-products__item:last-child {
   position: relative;
   padding-top: 15px;
 

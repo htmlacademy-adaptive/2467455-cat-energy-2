@@ -1,9 +1,10 @@
 .gift {
   width: 280px;
-  height: 290px;
+  min-height: 290px;
   margin-top: 34px;
   background-image: url("../../images/backgiftmobile@1x.webp");
   background-size: contain;
+  background-color: #68b738;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +35,7 @@
 
   @media (min-width: $tablet-width) {
     width: 707px;
-    height: 200px;
+    min-height: 200px;
     background-image: url("../../images/backgifttablet@1x.webp");
 
     @media (min-resolution: 2dppx) {
@@ -46,7 +47,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    height: 288px;
+    min-height: 288px;
     background-image: url("../../images/backgiftdesktop@1x.webp");
 
     @media (min-resolution: 2dppx) {
