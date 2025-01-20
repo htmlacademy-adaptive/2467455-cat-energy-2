@@ -153,3 +153,10 @@
     margin-bottom: 26px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .more {
+    min-height: 0;
+    padding-bottom: 37px;
+  }
+}

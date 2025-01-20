@@ -120,3 +120,17 @@
     min-height: 429px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .products-catalog__item:last-child::after {
+    display: none;
+  }
+
+  .products-catalog__item:nth-last-child(2) {
+    padding-bottom: 0;
+  }
+
+  .products-catalog__list {
+    align-items: flex-start;
+  }
+}
