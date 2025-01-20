@@ -1,0 +1,63 @@
+.copyright {
+  width: 280px;
+  height: 34px;
+  margin: 20px auto 0;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+    margin: 0;
+    height: 37px;
+  }
+}
+
+.copyright__logo p {
+  font-family: $Lato;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  margin-top: 8px;
+
+  &:hover,
+  &:focus {
+    color: #444444;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 8px;
+    margin-left: 7px;
+  }
+}
+
+.copyright__logo {
+  text-decoration: none;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 34px;
+    display: block;
+    mask-image: url("../../icons/stack.svg#logohtml");
+    mask-repeat: no-repeat;
+    mask-size: 27px 34px;
+    background-color: #666666;
+    right: 0;
+    top: 0;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    background-color: #68b738;
+  }
+
+  &:active::after {
+    background-color: #68b738;
+    opacity: 0.3;
+  }
+}
