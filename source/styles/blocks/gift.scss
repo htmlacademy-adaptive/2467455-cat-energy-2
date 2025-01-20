@@ -30,7 +30,6 @@
 
     @media (min-width: $desktop-width) {
       left: 81px;
-      padding-top: 1px;
     }
   }
 
@@ -49,6 +48,7 @@
   @media (min-width: $desktop-width) {
     width: 245px;
     min-height: 288px;
+    padding-top: 100px;
     background-image: url("../../images/backgiftdesktop@1x.webp");
 
     @media (min-resolution: 2dppx) {

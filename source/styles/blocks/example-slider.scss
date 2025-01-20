@@ -1,7 +1,7 @@
 .example-slider {
   background-color: #eaeaea;
   padding-top: 20px;
-  padding-bottom: 35px;
+  padding-bottom: 38px;
   align-items: start;
 
   @media (min-width: $tablet-width) {
@@ -93,7 +93,9 @@
   transform: translate(-50%, -50%);
   background-color: #ffffff;
   border-radius: 100%;
-  border: 5px solid #666666;
+  border: 3px solid #666666;
+  width: 40px;
+  height: 40px;
 
   &::before {
     content: "";
@@ -111,9 +113,11 @@
 
   &::after {
     content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
     width: 40px;
     height: 40px;
-    display: block;
     mask-image: url("../../icons/stack.svg#slider");
     mask-repeat: no-repeat;
     mask-size: 40px 40px;
@@ -150,19 +154,27 @@
     opacity: 0.6;
   }
 
+  @media (min-width: $tablet-width) {
+    top: 49%;
+
+    &::before {
+      height: 512px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     width: 40px;
     height: 40px;
     display: flex;
     place-content: center;
+    top: 50%;
+    left: 270px;
 
-    &::before {
-      height: 512px;
-    }
 
     &::after {
       display: flex;
       justify-content: flex-end;
+      top: -3px;
     }
   }
 }
@@ -185,7 +197,7 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     margin-left: 10px;
-    margin-bottom: 120px;
+    margin-bottom: 81px;
     width: 325px;
   }
 }
@@ -209,7 +221,7 @@
   @media (min-width: $desktop-width) {
     width: 436px;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
     margin-left: 11px;
   }
 }
@@ -283,6 +295,7 @@
     background-color: #f2f2f2;
     margin: 0;
     margin-left: 22px;
+    margin-top: -8px;
   }
 }
 
@@ -333,6 +346,7 @@
     background-color: #f2f2f2;
     margin: 0;
     margin-left: 8px;
+    margin-top: -8px;
   }
 }
 
@@ -355,8 +369,9 @@
   @media (min-width: $desktop-width) {
     width: 372px;
     text-align: start;
+    margin: 0;
     margin-left: 12px;
-    margin-top: 24px;
+    display: flex;
   }
 }
 
@@ -367,9 +382,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 45px;
-    margin-top: -20px;
-    text-align: end;
+    margin: 0;
+    margin-left: 65px;
+    justify-self: flex-end;
   }
 }
 
