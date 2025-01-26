@@ -106,7 +106,7 @@
   }
 }
 
-.product__button {
+.product__link {
   font-family: $Oswald;
   font-weight: 400;
   font-size: 16px;
@@ -125,6 +125,7 @@
   word-wrap: break-word;
   word-break: break-word;
   white-space: normal;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
     width: 250px;
@@ -191,4 +192,9 @@
     margin-top: 27px;
     margin-left: 42px;
   }
+}
+
+.product__item-link {
+  text-decoration: none;
+  color: #222222;
 }

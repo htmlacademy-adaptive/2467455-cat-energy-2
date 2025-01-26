@@ -4,7 +4,8 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin-bottom: 4px;
+  margin-top: 2px;
+  margin-bottom: 27px;
 
   &::before {
     position: absolute;
@@ -94,7 +95,7 @@
   }
 }
 
-.more__button {
+.more__link {
   font-family: $Oswald;
   font-weight: 400;
   font-size: 16px;
@@ -106,6 +107,23 @@
   width: 280px;
   height: 40px;
   border: none;
+  text-decoration: none;
+  padding-top: 10px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    height: 1px;
+    background-color: #ebebeb;
+    width: 100vw;
+    left: calc((100vw - 100%) / -2);
+
+    @media (min-width: $tablet-width) {
+      height: 0;
+    }
+  }
 
   &:hover {
     background-color: #ebebeb;
@@ -139,6 +157,20 @@
   margin-bottom: -4px;
   text-align: center;
   position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -79px;
+    height: 1px;
+    background-color: #ebebeb;
+    width: 100vw;
+    left: calc((100vw - 100%) / -2);
+
+    @media (min-width: $tablet-width) {
+      height: 0;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

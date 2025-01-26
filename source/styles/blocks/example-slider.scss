@@ -1,8 +1,30 @@
 .example-slider {
-  background-color: #eaeaea;
   padding-top: 20px;
   padding-bottom: 38px;
   align-items: start;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 659px;
+    background-color: #eaeaea;
+    width: 100vw;
+    left: calc((100vw - 100%) / -2);
+    z-index: -1;
+
+    @media (min-width: $tablet-width) {
+      height: 462px;
+      top: 570px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 135px;
+      background-color: #f2f2f2;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     background-color: #ffffff;
@@ -17,34 +39,34 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .example-slider {
-    position: relative;
-  }
+// @media (min-width: $tablet-width) {
+//   .example-slider {
+//     position: relative;
+//   }
 
-  .example-slider > * {
-    position: relative;
-    z-index: 1;
-  }
+//   .example-slider > * {
+//     position: relative;
+//     z-index: 1;
+//   }
 
-  .example-slider::before {
-    content: "";
-    position: absolute;
-    top: 135px;
-    height: 462px;
-    background-color: #f2f2f2;
-    width: 100vw;
-    left: calc((100vw - 100%) / -2);
+//   .example-slider::before {
+//     content: "";
+//     position: absolute;
+//     top: 135px;
+//     height: 462px;
+//     background-color: #f2f2f2;
+//     width: 100vw;
+//     left: calc((100vw - 100%) / -2);
 
-    @media (min-width: $tablet-width) {
-      top: 570px;
-    }
+//     @media (min-width: $tablet-width) {
+//       top: 570px;
+//     }
 
-    @media (min-width: $desktop-width) {
-      top: 135px;
-    }
-  }
-}
+//     @media (min-width: $desktop-width) {
+//       top: 135px;
+//     }
+//   }
+// }
 
 
 .example-slider__wrapper {

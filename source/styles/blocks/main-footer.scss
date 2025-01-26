@@ -32,7 +32,6 @@
   }
 }
 
-
 .main-footer__logo {
   margin: 40px auto 20px;
 
@@ -41,23 +40,12 @@
     margin-left: 1px;
   }
 
-  &::after {
-    content: "";
-    width: 128px;
-    height: 24px;
-    display: block;
-    mask-image: url("../../icons/stack.svg#logotext");
-    mask-repeat: no-repeat;
-    mask-size: 128px 24px;
-    background-color: #111111;
-  }
-
   &:hover,
   &:focus {
-    opacity: 0.8;
+    fill: #3e3e3e;
   }
 
   &:active {
-    opacity: 0.6;
+    fill: #6b6b6b;
   }
 }
