@@ -11,12 +11,16 @@
     flex-direction: column;
     justify-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    min-height: 400px;
+  }
 }
 
 .product__wrapper {
   @media (min-width: $tablet-width) {
     width: 250px;
-    min-height: 157px;
+    min-height: 186px;
   }
 }
 
@@ -24,18 +28,30 @@
   width: 140px;
   display: flex;
   justify-content: space-between;
-  height: 16px;
+  text-align: left/right;
 
   @media (min-width: $tablet-width) {
     width: 250px;
-    height: 25px;
-    border-bottom: 1px solid #cdcdcd;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -7px;
+      left: 0;
+      height: 1px;
+      background-color: #cdcdcd;
+      width: 100%;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 169px;
     margin: auto;
-    height: 26px;
+
+    &::after {
+      height: 0;
+    }
   }
 }
 
@@ -81,14 +97,15 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-flow: column wrap;
-    row-gap: 7px;
+    row-gap: 12px;
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 30px;
+    min-height: 84px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 33px;
+    margin-bottom: 34px;
   }
 }
 
@@ -106,7 +123,7 @@
   }
 }
 
-.product__button {
+.product__link {
   font-family: $Oswald;
   font-weight: 400;
   font-size: 16px;
@@ -125,6 +142,7 @@
   word-wrap: break-word;
   word-break: break-word;
   white-space: normal;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
     width: 250px;
@@ -133,6 +151,7 @@
 
   @media (min-width: $desktop-width) {
     width: 169px;
+    margin-top: 10px;
 
     &:hover {
       background-color: #5eaa2f;
@@ -191,4 +210,9 @@
     margin-top: 27px;
     margin-left: 42px;
   }
+}
+
+.product__item-link {
+  text-decoration: none;
+  color: #222222;
 }

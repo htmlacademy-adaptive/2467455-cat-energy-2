@@ -1,12 +1,10 @@
 .copyright {
   width: 280px;
-  height: 34px;
   margin: 20px auto 0;
 
   @media (min-width: $tablet-width) {
     width: 168px;
     margin: 0;
-    height: 37px;
   }
 }
 
@@ -17,6 +15,8 @@
   line-height: 20px;
   color: #444444;
   margin-top: 8px;
+  text-decoration: none;
+  display: block;
 
   &:hover,
   &:focus {
@@ -33,31 +33,25 @@
   }
 }
 
+.copyright__logo svg {
+  fill: #666666;
+}
+
+.copyright__logo:hover svg {
+  fill: #68b738;
+}
+
+.copyright__logo:focus svg {
+  fill: #68b738;
+}
+
+.copyright__logo:active svg {
+  fill: #68b738;
+  opacity: 0.3;
+}
+
 .copyright__logo {
   text-decoration: none;
-  position: relative;
-
-  &::after {
-    position: absolute;
-    content: "";
-    width: 27px;
-    height: 34px;
-    display: block;
-    mask-image: url("../../icons/stack.svg#logohtml");
-    mask-repeat: no-repeat;
-    mask-size: 27px 34px;
-    background-color: #666666;
-    right: 0;
-    top: 0;
-  }
-
-  &:hover::after,
-  &:focus::after {
-    background-color: #68b738;
-  }
-
-  &:active::after {
-    background-color: #68b738;
-    opacity: 0.3;
-  }
+  display: flex;
+  justify-content: space-between;
 }

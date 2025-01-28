@@ -64,6 +64,8 @@
   position: relative;
   z-index: 1;
   padding: 0 10px;
+  width: 200px;
+  display: block;
 
   @media (min-width: $tablet-width) {
     right: -21px;
@@ -135,6 +137,12 @@
   }
 }
 
+// Добавить класс subscribe__form--error на input в каталоге чтобы увидеть стили при ошибке error
+.subscribe__form .subscribe__form--error {
+  border: 2px solid #ff8282;
+  outline: none;
+}
+
 .subscribe__button {
   font-size: 20px;
   line-height: 26px;
@@ -142,6 +150,7 @@
   font-weight: 400;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
   background-color: #68b738;
   width: 280px;
   border: none;
@@ -170,10 +179,15 @@
 }
 
 .subscribe__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: center;
     min-height: 56px;
+    flex-direction: row;
   }
 
   @media (min-width: $desktop-width) {
