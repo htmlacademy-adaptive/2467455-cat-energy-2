@@ -1,4 +1,6 @@
 .map-catalog {
+  background-color: #f2f2f2;
+
   @media (min-width: $tablet-width) {
     margin-top: 23px;
   }
@@ -6,9 +8,4 @@
   @media (min-width: $desktop-width) {
     margin: 0;
   }
-}
-
-.map-catalog__container {
-  background-color: #f2f2f2;
-  width: 100vw;
 }

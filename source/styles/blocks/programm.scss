@@ -22,6 +22,9 @@
   min-width: 110px;
   margin-top: 30px;
   margin-bottom: 29px;
+  word-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -33,7 +36,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    text-align: center;
+    text-align: left;
     margin-bottom: 73px;
     margin-left: 0;
   }
@@ -41,25 +44,36 @@
 
 .programm__title-slim {
   margin-left: 9px;
+  padding-left: 65px;
 
   @media (min-width: $tablet-width) {
     margin-left: 52px;
+    padding: 0;
+    max-width: 350px;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 26px;
+    padding-left: 150px;
+    max-width: 500px;
   }
 }
 
 .programm__title-pro {
   margin-left: 38px;
+  padding-left: 42px;
 
   @media (min-width: $tablet-width) {
     margin-left: 53px;
+    padding: 0;
+    max-width: 350px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 62px;
+    margin-left: 25px;
+    padding-left: 150px;
+    max-width: 500px;
+    text-align: left;
   }
 }
 
@@ -175,7 +189,8 @@
 
 .programm__item {
   background-color: #f2f2f2;
-  min-height: 266px;
+  min-height: 256px;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     min-height: 372px;

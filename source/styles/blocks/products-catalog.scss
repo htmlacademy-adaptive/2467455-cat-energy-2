@@ -1,7 +1,7 @@
 .products-catalog {
   @media (min-width: $tablet-width) {
     min-height: 1368px;
-    margin-bottom: 88px;
+    margin-bottom: 112px;
 
     @media (min-width: $desktop-width) {
       margin-bottom: 38px;
@@ -79,7 +79,7 @@
       position: absolute;
       content: "";
       width: 324px;
-      height: 90%;
+      height: 91%;
       background-color: #f2f2f2;
       top: 81px;
       left: 0;
@@ -92,6 +92,7 @@
 
     &::after {
       width: 245px;
+      height: 91%;
     }
   }
 }

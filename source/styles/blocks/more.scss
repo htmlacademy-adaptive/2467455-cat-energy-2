@@ -35,8 +35,9 @@
     width: 324px;
     min-height: 430px;
     border: 2px solid #f2f2f2;
-    margin-top: 80px;
     background-color: #ffffff;
+    bottom: -80px;
+    margin-bottom: 40px;
 
     &::before {
       position: absolute;
@@ -63,6 +64,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
+    margin-top: 0;
 
     &::after {
 
@@ -105,10 +107,9 @@
   text-transform: uppercase;
   background-color: #f2f2f2;
   width: 280px;
-  height: 40px;
   border: none;
   text-decoration: none;
-  padding-top: 10px;
+  padding: 10px;
   position: relative;
 
   &::after {
