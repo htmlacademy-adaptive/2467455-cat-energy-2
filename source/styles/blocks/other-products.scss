@@ -72,6 +72,10 @@
   @media (min-width: $tablet-width) {
     top: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 18px;
+  }
 }
 
 .other-products__title span {

@@ -1,0 +1,33 @@
+.navigation-catalog {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    height: 1px;
+    background-color: #ebebeb;
+    width: 100vw;
+    left: calc((100vw - 100%) / -2);
+
+    @media (min-width: $tablet-width) {
+      height: 0;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 55px;
+    min-height: 59px;
+  }
+}
