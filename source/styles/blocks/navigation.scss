@@ -120,7 +120,7 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    height: 33px;
+    min-height: 33px;
 
     &:hover {
       opacity: 0.6;
@@ -133,7 +133,7 @@
 
   @media (min-width: $desktop-width) {
     color: #ffffff;
-    height: 37px;
+    min-height: 37px;
 
     &:hover {
       opacity: 0.6;
@@ -258,5 +258,28 @@
   @media (min-width: $tablet-width) {
     display: flex;
     align-items: center;
+  }
+}
+
+.navigation.navigation--catalog {
+  @media (min-width: $tablet-width) {
+    height: auto;
+    min-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: auto;
+    min-height: 59px;
+  }
+}
+
+.navigation__container.navigation__container--catalog {
+  @media (min-width: $tablet-width) {
+    align-items: end;
+    margin-top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 25px;
   }
 }
