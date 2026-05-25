@@ -152,7 +152,10 @@
 .advantages__item:nth-child(1)::after {
   position: absolute;
   content: "";
-  background-image: url("../../icons/stack.svg#leaf");
+  background-image: url("../icons/leaf.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   width: 30px;
   height: 32px;
   top: 14px;
@@ -179,7 +182,10 @@
 .advantages__item:nth-child(2)::after {
   position: absolute;
   content: "";
-  background-image: url("../../icons/stack.svg#bottle");
+  background-image: url("../icons/bottle.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   width: 26px;
   height: 29px;
   top: 15px;
@@ -207,7 +213,10 @@
 .advantages__item:nth-child(3)::after {
   position: absolute;
   content: "";
-  background-image: url("../../icons/stack.svg#iconeat");
+  background-image: url("../icons/iconeat.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   width: 25px;
   height: 30px;
   top: 15px;
@@ -235,7 +244,10 @@
 .advantages__item:nth-child(4)::after {
   position: absolute;
   content: "";
-  background-image: url("../../icons/stack.svg#clock");
+  background-image: url("../icons/clock.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   width: 26px;
   height: 31px;
   top: 15px;

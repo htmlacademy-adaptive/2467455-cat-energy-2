@@ -6,7 +6,7 @@ import htmlmin from 'gulp-htmlmin';
 import * as dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 import postcss from 'gulp-postcss';
-import postUrl from 'postcss-url';
+// import postUrl from 'postcss-url';
 import lightningcss from 'postcss-lightningcss';
 import { createGulpEsbuild } from 'gulp-esbuild';
 import browserslistToEsbuild from 'browserslist-to-esbuild';
@@ -28,6 +28,7 @@ const PATHS_TO_STATIC = [
   `${PATH_TO_SOURCE}favicons/**/*.{png,svg}`,
   `${PATH_TO_SOURCE}vendor/**/*`,
   `${PATH_TO_SOURCE}images/**/*`,
+  `${PATH_TO_SOURCE}icons/**/*.svg`,
   `!${PATH_TO_SOURCE}**/README.md`,
 ];
 let isDevelopment = true;
@@ -49,20 +50,6 @@ export function processStyles () {
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(postcss([
-      postUrl([
-        {
-          filter: '**/*',
-          assetsPath: '../',
-        },
-        {
-          filter: '**/icons/**/*.svg',
-          url: (asset) => asset.url.replace(
-            /icons\/(.+?)\.svg$/,
-            (match, p1) => `icons/stack.svg#${p1.replace(/\//g, '_')}`
-          ),
-          multi: true,
-        },
-      ]),
       lightningcss({
         lightningcssOptions: {
           minify: !isDevelopment,
@@ -135,36 +122,23 @@ export function copyStatic () {
     .pipe(dest(PATH_TO_DIST));
 }
 
-export function startServer () {
-  const serveStatic = PATHS_TO_STATIC
-    .filter((path) => path.startsWith('!') === false)
-    .map((path) => {
-      const dir = path.replace(/(\/\*\*\/.*$)|\/$/, '');
-      const route = dir.replace(PATH_TO_SOURCE, '/');
-
-      return { route, dir };
-    });
-
+export function startServer(done) {
   server.init({
     server: {
       baseDir: PATH_TO_DIST
     },
-    serveStatic,
     cors: true,
     notify: false,
     ui: false,
-  }, (err, bs) => {
-    bs.addMiddleware('*', (req, res) => {
-      res.write(readFileSync(`${PATH_TO_DIST}404.html`));
-      res.end();
-    });
+    port: 3000
   });
 
   watch(`${PATH_TO_SOURCE}**/*.{html,njk}`, series(processMarkup));
   watch(`${PATH_TO_SOURCE}styles/**/*.scss`, series(processStyles));
   watch(`${PATH_TO_SOURCE}scripts/**/*.js`, series(processScripts));
   watch(`${PATH_TO_SOURCE}icons/**/*.svg`, series(createStack, reloadServer));
-  watch(PATHS_TO_STATIC, series(reloadServer));
+
+  done();
 }
 
 function reloadServer (done) {
@@ -202,6 +176,7 @@ export function runDev (done) {
       processStyles,
       processScripts,
       createStack,
+      copyStatic,
     ),
     startServer,
   )(done);

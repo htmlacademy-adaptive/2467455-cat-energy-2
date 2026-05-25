@@ -183,7 +183,7 @@
 .navigation--closed .navigation__toggle::before {
   content: "";
   position: absolute;
-  background-image: url("../../icons/stack.svg#menubutton");
+  background-image: url("../icons/menubutton.svg");
   background-size: 24px 24px;
   background-repeat: no-repeat;
   background-color: #ffffff;
@@ -216,7 +216,7 @@
 .navigation--opened .navigation__toggle::after {
   content: "";
   position: absolute;
-  background-image: url("../../icons/stack.svg#closebutton");
+  background-image: url("../icons/closebutton.svg");
   background-size: 18px 18px;
   background-repeat: no-repeat;
   background-color: #ffffff;

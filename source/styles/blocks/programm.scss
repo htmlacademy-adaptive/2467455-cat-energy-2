@@ -150,7 +150,10 @@
 .programm__link::after {
   position: absolute;
   content: "";
-  background-image: url("../../icons/stack.svg#shortarrow");
+  background-image: url("../icons/shortarrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   width: 24px;
   height: 12px;
   top: 5px;
@@ -163,7 +166,10 @@
 }
 
 .programm__link:hover::after {
-  background-image: url("../../icons/stack.svg#arrow");
+  background-image: url("../icons/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   width: 32px;
   height: 12px;
 }
@@ -206,7 +212,10 @@
 .programm__item:nth-child(1)::before {
   position: absolute;
   content: "";
-  background-image: url("../../icons/stack.svg#slimcat");
+  background-image: url("../icons/slimcat.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   width: 50px;
   min-height: 53px;
   top: 22px;
@@ -234,7 +243,10 @@
 .programm__item:nth-child(2)::before {
   position: absolute;
   content: "";
-  background-image: url("../../icons/stack.svg#procat");
+  background-image: url("../icons/procat.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   width: 67px;
   min-height: 50px;
   top: 23px;

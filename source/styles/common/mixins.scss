@@ -5,7 +5,7 @@
     font-style: $font-style;
     font-display: swap;
     src:
-      url(#{$font-src-woff2}) format("woff2"),
-      url(#{$font-src-woff}) format("woff");
+      url("#{$font-src-woff2}") format("woff2"),
+      url("#{$font-src-woff}") format("woff");
   }
 }

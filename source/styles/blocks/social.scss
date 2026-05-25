@@ -2,7 +2,10 @@
   width: 28px;
   height: 22px;
   display: block;
-  mask-image: url("../../icons/stack.svg#vkontakte");
+  mask-image: url("../icons/vkontakte.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   mask-repeat: no-repeat;
   mask-size: 28px 22px;
   background-color: #666666;
@@ -22,7 +25,10 @@
   width: 28px;
   height: 22px;
   display: block;
-  mask-image: url("../../icons/stack.svg#youtube");
+  mask-image: url("../icons/youtube.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   mask-repeat: no-repeat;
   mask-size: 28px 22px;
   background-color: #666666;
@@ -42,7 +48,10 @@
   width: 28px;
   height: 22px;
   display: block;
-  mask-image: url("../../icons/stack.svg#telegram");
+  mask-image: url("../icons/telegram.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   mask-repeat: no-repeat;
   mask-size: 28px 22px;
   background-color: #666666;
